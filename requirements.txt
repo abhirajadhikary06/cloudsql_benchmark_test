@@ -1,0 +1,8 @@
+psycopg[binary] 
+asyncpg 
+jupyter
+notebook
+pandas
+numpy
+matplotlib
+seaborn
