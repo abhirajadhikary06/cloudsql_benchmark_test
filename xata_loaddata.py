@@ -45,7 +45,7 @@ if not duplicates.empty:
 print(f"Final row count after cleaning: {len(df)}")
 
 # ---- Step 2: Database connection details ----
-db_url = os.getenv('XATA_DATABASE_URL') or "postgresql://6qhamt:xau_NGc5uJHt6ZUcNBChcsaGGBTJ7uSdmtDz1@ap-southeast-2.sql.xata.sh/benchmark:main?sslmode=require"
+db_url = os.getenv('XATA_DATABASE_URL')
 
 # ---- Step 3: Connect to Xata ----
 try:

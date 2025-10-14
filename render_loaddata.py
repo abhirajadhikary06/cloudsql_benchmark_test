@@ -45,9 +45,9 @@ if not duplicates.empty:
 print(f"Final row count after cleaning: {len(df)}")
 
 # ---- Step 2: Database connection details ----
-db_url = os.getenv('NEONDB_DATABASE_URL')
+db_url = os.getenv('RENDER_DATABASE_URL')
 
-# ---- Step 3: Connect to NeonDB ----
+# ---- Step 3: Connect to Render ----
 try:
     conn = psycopg2.connect(
         db_url,
@@ -59,7 +59,7 @@ try:
     )
     conn.autocommit = True
     cur = conn.cursor()
-    print("Connected to NeonDB successfully.")
+    print("Connected to Render successfully.")
 except Exception as e:
     print(f"Database connection failed: {e}")
     sys.exit(1)

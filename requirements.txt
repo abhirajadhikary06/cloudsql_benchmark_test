@@ -7,3 +7,5 @@ numpy
 matplotlib
 seaborn
 python-dotenv
+SQLalchemy
+psycopg2
