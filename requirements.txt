@@ -9,3 +9,4 @@ seaborn
 python-dotenv
 SQLalchemy
 psycopg2
+faker
